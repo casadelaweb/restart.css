@@ -23,20 +23,20 @@ body {
   min-height: 100%;
   width: 100%;
 
+  // Блокируем любой скролл
   &.locked {
     overflow: hidden;
   }
 }
 
 body {
+  // Компенсируем смещение страницы
   &.locked {
     @media (any-hover: hover) {
       padding-right: $scrollWidth;
     }
   }
-}
 
-body {
   @media (any-hover: hover) {
     // Стилизуем основной скролл страницы
     &::-webkit-scrollbar {

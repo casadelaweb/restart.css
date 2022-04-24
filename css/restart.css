@@ -28,7 +28,6 @@ body.locked {
     padding-right: 10px;
   }
 }
-
 @media (any-hover: hover) {
   body::-webkit-scrollbar {
     width: 10px;
