@@ -25,9 +25,13 @@ body {
 
   &.locked {
     overflow: hidden;
+  }
+}
 
+body {
+  &.locked {
     @media (any-hover: hover) {
-      padding: $scrollWidth / 2;
+      padding-right: $scrollWidth;
     }
   }
 }
