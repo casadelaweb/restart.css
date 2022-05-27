@@ -29,6 +29,22 @@ body {
   }
 }
 
+html,
+body,
+#app,
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+body,
+#app,
+#root,
+main {
+  min-width: 0;
+  flex-grow: 1;
+}
+
 body {
   // Компенсируем смещение страницы
   &.locked {
@@ -181,12 +197,12 @@ textarea {
   }
 }
 
-input,
-textarea,
-button,
-select {
-  background: #f0f0f0;
-}
+// input,
+// textarea,
+// button,
+// select {
+//   background: #f0f0f0;
+// }
 
 textarea {
   display: block;
@@ -392,4 +408,17 @@ q {
   &::after {
     display: none;
   }
+}
+
+table {
+  border-collapse: collapse;
+  max-width: 100%;
+
+  display: block;
+}
+
+thead,
+tbody {
+  // max-width: 100%;
+  width: 100%;
 }
