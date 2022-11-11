@@ -1,2 +1,2 @@
 # restart.css
-Простая и легкая библиотека для сброса браузерных стилей по-умолчанию.
+Yet another default styles reset library.

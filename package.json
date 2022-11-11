@@ -1,0 +1,39 @@
+{
+  "name": "restart.css",
+  "version": "1.0.0",
+  "description": "Yet another default styles reset library.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/casadelaweb/restart.css.git"
+  },
+  "author": "https://github.com/casadelaweb/",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/casadelaweb/restart.css/issues"
+  },
+  "homepage": "https://github.com/casadelaweb/restart.css#readme",
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead"
+  ],
+  "scripts": {
+    "clean-dist": "rimraf dist/*",
+    "watch": "parcel watch",
+    "build": "npm run clean-dist && parcel build"
+  },
+  "targets": {
+    "css": {
+      "context": "browser",
+      "source": "src/bundle.scss",
+      "distDir": "dist/",
+      "optimize": false
+    }
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.0",
+    "parcel": "^2.8.0",
+    "rimraf": "^3.0.2"
+  }
+}
