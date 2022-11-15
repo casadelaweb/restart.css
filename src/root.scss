@@ -1,8 +1,0 @@
-html, body, #app {
-  display: flex;
-  flex-direction: column;
-}
-
-body, #app, main {
-  flex-grow: 1;
-}

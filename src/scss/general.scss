@@ -1,0 +1,40 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+}
+
+::before, ::after {
+  display: inline-block;
+}
+
+:focus, :active {
+  outline: 0;
+}
+
+button, a, input, label {
+  cursor: pointer;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+}
+
+:-webkit-autofill {
+  &, &:hover, &:focus, &:active {
+    transition: background-color 600000s 0s, color 600000s 0s;
+  }
+}
+
+::selection {
+  background: rgba(lightskyblue, 0.5);
+  text-shadow: none;
+}

@@ -1,23 +1,6 @@
-@import "./root";
+@import "./scss/general";
+@import "./scss/root";
+@import "./scss/button-and-links";
+@import "./scss/scrollbar";
+@import "./scss/inputs";
 
-* {
-  &::before, &::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-}
-
-::selection {
-  background: rgba(lightseagreen, 0.5);
-  text-shadow: none;
-}
-
-a {
-  color: currentColor;
-}
-
-button {
-  background: none;
-  border: 0;
-}

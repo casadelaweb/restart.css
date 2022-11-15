@@ -1,0 +1,28 @@
+@import "./vars";
+
+html {
+  min-height: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+html, body, #app {
+  display: flex;
+  flex-direction: column;
+}
+
+body, #app, main {
+  flex-grow: 1;
+}
+
+body {
+  background: $bodyBackgroundColor;
+  color: black;
+  font-size: 16px;
+  line-height: 1.25;
+}
