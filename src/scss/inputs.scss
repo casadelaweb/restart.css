@@ -1,68 +1,153 @@
 @import "./mixins";
 
-$size: 32px;
-
-[type="checkbox"], [type="radio"] {
+input {
   display: inline-block;
+}
+
+::placeholder {
+  @include transition(opacity);
+  opacity: 1;
+  color: darkgrey;
+}
+
+:focus::placeholder {
+  opacity: 0;
+}
+
+[type=text] {
+  &::-ms-clear,
+  &::-ms-reveal {
+    appearance: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+[type=number] {
+  -moz-appearance: textfield;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}
+
+[type=search] {
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    appearance: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+//[type="checkbox"], [type="radio"] {
+//  $size: 20px;
+//
+//  flex-shrink: 0;
+//  flex-grow: 0;
+//  appearance: none;
+//  position: relative;
+//  z-index: 0;
+//  width: $size;
+//  height: $size;
+//  border: 1px solid lightskyblue;
+//  overflow: hidden;
+//
+//  &::before {
+//    content: "";
+//    position: absolute;
+//    z-index: 1;
+//    top: 50%;
+//    left: 50%;
+//    transform: translate(-50%, -50%);
+//  }
+//}
+//
+//[type="checkbox"] {
+//  @include transition(background);
+//
+//  &::before {
+//    content: "";
+//    position: absolute;
+//    z-index: 2;
+//    top: 50%;
+//    left: 50%;
+//    width: 66.6667%;
+//    height: 66.6667%;
+//    @include transition(transform);
+//    transform: translate(-50%, -50%) rotate(180deg);
+//    // background: url("../img/check-white.svg") no-repeat center;
+//    background-size: contain;
+//  }
+//
+//  &:checked {
+//    background: lightskyblue;
+//
+//    &::before {
+//      transform: translate(-50%, -50%);
+//    }
+//  }
+//}
+//
+//[type="radio"] {
+//  border-radius: 50%;
+//
+//  &::before {
+//    border-radius: 50%;
+//    width: 66.6667%;
+//    height: 66.6667%;
+//    background: lightskyblue;
+//    transform: translate(-50%, #{$size});
+//    @include transition(transform);
+//  }
+//
+//  &:checked {
+//    &::before {
+//      transform: translate(-50%, -50%);
+//    }
+//  }
+//}
+
+
+[type=checkbox], [type=radio] {
+  $size: 40px;
+
   appearance: none;
   position: relative;
   z-index: 0;
-  width: $size;
+  width: $size * 2.2;
   height: $size;
-  border: 1px solid lightskyblue;
-  overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-[type="checkbox"] {
+  background: lightgrey;
+  border-radius: $size;
   @include transition(background);
 
   &::before {
-    content: "";
+    content: " ";
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     top: 50%;
-    left: 50%;
-    width: 66.6667%;
-    height: 66.6667%;
-    @include transition(transform);
-    transform: translate(-50%, -50%) rotate(180deg);
-    // background: url("../img/check-white.svg") no-repeat center;
-    background-size: contain;
-  }
-
-  &:checked {
-    background: lightskyblue;
-
-    &::before {
-      transform: translate(-50%, -50%);
-    }
-  }
-}
-
-[type="radio"] {
-  border-radius: 50%;
-
-  &::before {
+    left: $size * 0.2;
+    transform: translateY(-50%);
+    width: $size * 0.8;
+    height: $size * 0.8;
     border-radius: 50%;
-    width: 66.6667%;
-    height: 66.6667%;
-    background: lightskyblue;
-    transform: translate(-50%, #{$size});
-    @include transition(transform);
+    background: white;
+    @include transition(left);
   }
 
   &:checked {
+    background: lightskyblue;
+
     &::before {
-      transform: translate(-50%, -50%);
+      left: calc(100% - $size * 0.8 - $size * 0.2);
     }
   }
 }

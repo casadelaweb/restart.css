@@ -5,7 +5,8 @@
 }
 
 @mixin transition($properties...) {
-  transition-duration: 0.3334s;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
   will-change: $properties;
 
   @each $property in $properties {

@@ -13,14 +13,8 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    // transition: background-color 0.3334s;
-    // background: hsl(0, 0, 25%);
     background: black;
     border: $width * 0.25 solid $bodyBackgroundColor;
     border-radius: $width;
-
-    //&:hover {
-    //  background: black;
-    //}
   }
 }

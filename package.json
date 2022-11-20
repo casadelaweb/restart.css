@@ -10,7 +10,9 @@
   },
   "author": "https://github.com/casadelaweb/",
   "scripts": {
-    "watch": "webpack --watch",
+    "start": "webpack serve --node-env=development",
+    "watch": "webpack watch --node-env=development",
+    "dev": "webpack --node-env=development",
     "build": "webpack --node-env=production"
   },
   "browserslist": [

@@ -1,0 +1,30 @@
+ul,
+ol {
+  list-style: none;
+}
+
+li {
+  // Принудительно включить аппаратное ускорение на случай низкого заряда батареи
+
+  &::before,
+  &::after {
+    transform: translate3d(0, 0, 0);
+    transition: none;
+  }
+}
+
+// Отключаем дефолтные маркеры браузеров
+summary {
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &::-moz-list-bullet {
+    list-style-type: none;
+  }
+}
+
+details,
+summary {
+  display: block;
+}
