@@ -2,6 +2,7 @@
   "name": "restart.css",
   "description": "Yet another default styles reset library.",
   "version": "1.0.0",
+  "main": "./dist/main.css",
   "license": "ISC",
   "homepage": "https://github.com/casadelaweb/restart.css#readme",
   "repository": {
