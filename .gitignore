@@ -60,7 +60,6 @@ $RECYCLE.BIN/
 *.kit
 *.xml
 .idea
-.vscode
 node_modules
 .parcel-cache
 
