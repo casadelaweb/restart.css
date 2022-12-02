@@ -1,48 +1,48 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'es2021': true,
-    'amd': true,
-    'node': true,
+  env: {
+    browser: true,
+    es2021: true,
+    amd: true,
+    node: true,
   },
-  'extends': [
+  extends: [
     'eslint:recommended',
   ],
-  'overrides': [],
-  'parserOptions': {
-    'ecmaVersion': 'latest',
-    'sourceType': 'module',
+  overrides: [],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
-  'rules': {
-    'indent': [
+  rules: {
+    indent: [
       'error', 2,
     ],
     'linebreak-style': [
       'error', 'unix',
     ],
-    'quotes': [
+    quotes: [
       'error', 'single',
     ],
-    'semi': [
+    semi: [
       'error', 'always',
     ],
     'comma-dangle': [
       'error', {
-        'arrays': 'always',
-        'objects': 'always',
-        'imports': 'never',
-        'exports': 'never',
-        'functions': 'never',
+        arrays: 'always',
+        objects: 'always',
+        imports: 'never',
+        exports: 'never',
+        functions: 'never',
       },
     ],
     'array-element-newline': [
       'error', {
-        'ArrayExpression': { 'minItems': 3, },
-        'ArrayPattern': { 'minItems': 3, },
+        ArrayExpression: { minItems: 3, },
+        ArrayPattern: { minItems: 3, },
       },
     ],
     'array-bracket-newline': [
-      'error', { 'minItems': 1, },
+      'error', { minItems: 1, },
     ],
     'array-bracket-spacing': [
       'error', 'always',
@@ -50,10 +50,10 @@ module.exports = {
     'object-property-newline': 'error',
     'object-curly-newline': [
       'error', {
-        'ObjectExpression': { 'multiline': true, },
-        'ObjectPattern': { 'multiline': true, },
-        'ImportDeclaration': 'never',
-        'ExportDeclaration': { 'minProperties': 3, },
+        ObjectExpression: { multiline: true, },
+        ObjectPattern: { multiline: true, },
+        ImportDeclaration: 'never',
+        ExportDeclaration: { minProperties: 3, },
       },
     ],
     'object-curly-spacing': [
