@@ -1,11 +1,4 @@
 node_modules
 dist/dummy.js
-webpack.entry.js
-webpack.config.js
-.editorconfig
-index.html
-.eslintrc.js
-.gitattributes
-.gitignore
 .vscode
 .idea
