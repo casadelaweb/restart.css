@@ -3,6 +3,7 @@
   "description": "Yet another default styles reset library.",
   "version": "1.0.0",
   "main": "./dist/index.js",
+  "style": "./dist/restyle.css",
   "license": "ISC",
   "homepage": "https://github.com/casadelaweb/restyle.css#readme",
   "repository": {
