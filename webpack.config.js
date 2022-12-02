@@ -36,7 +36,7 @@ module.exports = {
   target: 'browserslist',
   devtool: isDevelopmentMode ? 'source-map' : false,
   optimization: { minimize: isProductionMode, },
-  entry: { dummy: pathFromRoot('src/webpack.entry.js'), },
+  entry: { dummy: pathFromRoot('./webpack.entry.js'), },
   output: {
     path: pathFromRoot('dist'),
     filename: '[name].js',
