@@ -1,4 +1,4 @@
-@mixin ifHover {
+@mixin hoverable {
   @media screen and (any-hover: hover) {
     @content;
   }
@@ -8,8 +8,5 @@
   transition-duration: 0.25s;
   // transition-timing-function: ease;
   // will-change: $properties;
-
-  @each $property in $properties {
-    transition-property: $property;
-  }
+  transition-property: $properties;
 }

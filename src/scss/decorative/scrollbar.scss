@@ -1,19 +1,19 @@
-@import "./vars";
-@import "./mixins";
+@import "../vars";
+@import "../mixins";
 
-@include ifHover {
+@include hoverable {
   $width: 16px;
 
   ::-webkit-scrollbar {
     width: $width;
   }
 
-  ::-webkit-scrollbar-track {
-    background: $bodyBackgroundColor;
-  }
+  //::-webkit-scrollbar-track {
+  //  background: $bodyBackgroundColor;
+  //}
 
   ::-webkit-scrollbar-thumb {
-    background: black;
+    background: $bodyColor;
     border: $width * 0.25 solid $bodyBackgroundColor;
     border-radius: $width;
   }

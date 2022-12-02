@@ -1,0 +1,22 @@
+ol {
+  counter-reset: list-counter;
+
+  li {
+    //position: relative;
+    //z-index: 0;
+    //padding-left: 20px;
+
+    &::before {
+      content: counter(list-counter) ". ";
+      counter-increment: list-counter;
+      //position: absolute;
+      //z-index: 0;
+      //top: 0;
+      //left: 0;
+      //height: 100%;
+    }
+  }
+}
+
+
+

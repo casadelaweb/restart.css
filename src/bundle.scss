@@ -1,8 +1,14 @@
 @import './scss/vars.scss';
 @import './scss/mixins.scss';
-@import './scss/root.scss';
+
 @import './scss/general.scss';
+@import './scss/root.scss';
 @import './scss/lists.scss';
-@import './scss/button-and-links.scss';
+@import './scss/buttons';
 @import './scss/inputs.scss';
-@import './scss/scrollbar.scss';
+
+@import "./scss/decorative/root";
+@import "./scss/decorative/lists";
+@import "./scss/decorative/buttons";
+@import './scss/decorative/scrollbar';
+@import "./scss/decorative/checkboxes";

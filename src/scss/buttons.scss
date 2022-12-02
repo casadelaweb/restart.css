@@ -1,0 +1,21 @@
+@import "mixins";
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  display: inline-block;
+}
+
+a, button {
+  @include transition(color);
+  // width: fit-content;
+
+  @include hoverable {
+    &:hover {
+      color: lightskyblue;
+    }
+  }
+}

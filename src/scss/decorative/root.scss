@@ -1,0 +1,15 @@
+@import "src/scss/vars";
+
+::selection {
+  background: rgba(lightskyblue, 0.5);
+  text-shadow: none;
+}
+
+body {
+  background: $bodyBackgroundColor;
+  color: $bodyColor;
+  font-size: 16px;
+  line-height: 1.25;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
