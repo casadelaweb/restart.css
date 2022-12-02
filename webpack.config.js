@@ -34,7 +34,7 @@ const stylesPipeline = {
 module.exports = {
   mode: mode,
   target: 'browserslist',
-  devtool: isDevelopmentMode ? 'source-map' : false,
+  devtool: false,
   optimization: { minimize: isProductionMode, },
   entry: { dummy: pathFromRoot('./webpack.entry.js'), },
   output: {
@@ -43,7 +43,7 @@ module.exports = {
     clean: false,
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: 'restart.css', }),
+    new MiniCssExtractPlugin({ filename: 'restyle.css', }),
   ],
   module: {
     rules: [

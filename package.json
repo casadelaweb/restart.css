@@ -1,17 +1,16 @@
 {
-  "name": "restart.css",
+  "name": "restyle.css",
   "description": "Yet another default styles reset library.",
   "version": "1.0.0",
   "main": "./dist/index.js",
   "license": "ISC",
-  "homepage": "https://github.com/casadelaweb/restart.css#readme",
+  "homepage": "https://github.com/casadelaweb/restyle.css#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/casadelaweb/restart.css.git"
+    "url": "git+https://github.com/casadelaweb/restyle.css.git"
   },
   "author": "https://github.com/casadelaweb/",
   "scripts": {
-    "start": "webpack serve --node-env=development",
     "watch": "webpack watch --node-env=development",
     "dev": "webpack --node-env=development",
     "build": "webpack --node-env=production"
