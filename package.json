@@ -1,8 +1,8 @@
 {
-  "name": "restart.css",
+  "name": "starter",
   "description": "Yet another default styles reset library.",
   "version": "1.0.0",
-  "main": "./dist/main.css",
+  "main": "./dist/restart.css",
   "license": "ISC",
   "homepage": "https://github.com/casadelaweb/restart.css#readme",
   "repository": {
@@ -16,24 +16,15 @@
     "dev": "webpack --node-env=development",
     "build": "webpack --node-env=production"
   },
-  "browserslist": [
-    "> 0.5%",
-    "last 2 versions",
-    "Firefox ESR",
-    "not dead"
-  ],
   "devDependencies": {
     "css-loader": "^6.7.1",
-    "eslint": "^8.27.0",
-    "html-loader": "^4.2.0",
-    "html-webpack-plugin": "^5.5.0",
+    "eslint": "^8.28.0",
     "mini-css-extract-plugin": "^2.6.1",
     "postcss": "^8.4.19",
     "postcss-loader": "^7.0.1",
     "postcss-preset-env": "^7.8.2",
     "sass": "^1.56.1",
     "sass-loader": "^13.2.0",
-    "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"
