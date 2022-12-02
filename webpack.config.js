@@ -36,11 +36,11 @@ module.exports = {
   target: 'browserslist',
   devtool: isDevelopmentMode ? 'source-map' : false,
   optimization: { minimize: isProductionMode, },
-  entry: { app: pathFromRoot('src/webpack.entry.js'), },
+  entry: { dummy: pathFromRoot('src/webpack.entry.js'), },
   output: {
     path: pathFromRoot('dist'),
-    filename: 'index.js',
-    clean: true,
+    filename: '[name].js',
+    clean: false,
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: 'restart.css', }),
@@ -57,15 +57,5 @@ module.exports = {
         generator: { filename: 'assets/img/[name][ext]', },
       },
     ],
-  },
-  devServer: {
-    port: 3000,
-    open: true,
-    hot: false,
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
-      'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
-    },
   },
 };

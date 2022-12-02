@@ -1,8 +1,8 @@
 {
-  "name": "starter",
+  "name": "restart.css",
   "description": "Yet another default styles reset library.",
   "version": "1.0.0",
-  "main": "./dist/restart.css",
+  "main": "./dist/index.js",
   "license": "ISC",
   "homepage": "https://github.com/casadelaweb/restart.css#readme",
   "repository": {
@@ -26,7 +26,6 @@
     "sass": "^1.56.1",
     "sass-loader": "^13.2.0",
     "webpack": "^5.75.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.11.1"
+    "webpack-cli": "^4.10.0"
   }
 }

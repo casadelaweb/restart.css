@@ -36,5 +36,6 @@ $RECYCLE.BIN/
 *.kit
 *.xml
 .idea
+dist/dummy.js
 node_modules
 .parcel-cache
