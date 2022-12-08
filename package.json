@@ -1,7 +1,7 @@
 {
   "name": "restyle.css",
   "description": "Yet another default styles reset library.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "./dist/index.js",
   "style": "./dist/restyle.css",
   "license": "ISC",
@@ -12,9 +12,10 @@
   },
   "author": "https://github.com/casadelaweb/",
   "scripts": {
+    "clean-up": "rm -rf dist/dummy.js",
     "watch": "webpack watch --node-env=development",
     "dev": "webpack --node-env=development",
-    "build": "webpack --node-env=production"
+    "build": "webpack --node-env=production && npm run clean-up"
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
@@ -23,6 +24,7 @@
     "postcss": "^8.4.19",
     "postcss-loader": "^7.0.1",
     "postcss-preset-env": "^7.8.2",
+    "rimraf": "^3.0.2",
     "sass": "^1.56.1",
     "sass-loader": "^13.2.0",
     "webpack": "^5.75.0",

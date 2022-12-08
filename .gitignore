@@ -39,3 +39,13 @@ $RECYCLE.BIN/
 dist/dummy.js
 node_modules
 .parcel-cache
+.gitattributes
+.editorconfig
+.gitignore
+.eslint.js
+.eslintrc
+webpack.config.js
+webpack.entry.js
+index.html
+.browerslistrc
+.npmignore

@@ -9,9 +9,8 @@ button {
   display: inline-block;
 }
 
-a, button {
+a {
   @include transition(color);
-  // width: fit-content;
 
   @include hoverable {
     &:hover {
