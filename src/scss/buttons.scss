@@ -1,20 +1,11 @@
 @import "mixins";
 
 a {
+  display: inline;
   color: currentColor;
   text-decoration: none;
 }
 
 button {
   display: inline-block;
-}
-
-a {
-  @include transition(color);
-
-  @include hoverable {
-    &:hover {
-      color: lightskyblue;
-    }
-  }
 }

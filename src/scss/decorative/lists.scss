@@ -1,5 +1,5 @@
 ol {
-  counter-reset: list-counter;
+  counter-reset: ol-list-counter;
 
   li {
     //position: relative;
@@ -7,8 +7,9 @@ ol {
     //padding-left: 20px;
 
     &::before {
-      content: counter(list-counter) ". ";
-      counter-increment: list-counter;
+      content: counter(ol-list-counter) ".";
+      counter-increment: ol-list-counter;
+      margin-right: 2px;
       //position: absolute;
       //z-index: 0;
       //top: 0;

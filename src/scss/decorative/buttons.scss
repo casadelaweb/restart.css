@@ -1,0 +1,9 @@
+@import "../mixins";
+
+a {
+  @include transition(color);
+
+  &:hover {
+    color: dodgerblue;
+  }
+}
