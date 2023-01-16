@@ -1,7 +1,7 @@
 {
   "name": "restyle.css",
   "description": "Yet another default styles reset library.",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "main": "./dist/index.js",
   "style": "./dist/restyle.css",
   "license": "ISC",
