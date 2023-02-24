@@ -1,6 +1,3 @@
-@import './scss/vars.scss';
-@import './scss/mixins.scss';
-
 @import './scss/general.scss';
 @import './scss/root.scss';
 @import './scss/lists.scss';
@@ -9,7 +6,7 @@
 
 @import "./scss/decorative/root";
 @import "./scss/decorative/lists";
-// @import "./scss/decorative/buttons";
+@import "./scss/decorative/buttons";
 @import './scss/decorative/scrollbar';
 @import "./scss/decorative/inputs";
 @import "./scss/decorative/checkboxes";

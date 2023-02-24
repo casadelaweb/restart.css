@@ -1,11 +1,9 @@
-@import './mixins';
-
 input {
   display: inline-block;
 }
 
 ::placeholder {
-  @include transition(opacity);
+  transition: opacity 0.5s;
   opacity: 1;
   color: darkgrey;
 }

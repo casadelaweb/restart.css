@@ -1,20 +1,19 @@
-@import "../vars";
-@import "../mixins";
+html {
+  @media screen and (any-hover: hover) {
+    $width: 10px;
 
-@include hoverable {
-  $width: 16px;
+    &::-webkit-scrollbar {
+      width: $width;
+    }
 
-  ::-webkit-scrollbar {
-    width: $width;
-  }
+    //::-webkit-scrollbar-track {
+    //  background: black;
+    //}
 
-  //::-webkit-scrollbar-track {
-  //  background: $bodyBackgroundColor;
-  //}
-
-  ::-webkit-scrollbar-thumb {
-    background: $bodyColor;
-    border: $width * 0.25 solid $bodyBackgroundColor;
-    border-radius: $width;
+    &::-webkit-scrollbar-thumb {
+      background: black;
+      // border: $width * 0.25 solid white;
+      // border-radius: $width;
+    }
   }
 }

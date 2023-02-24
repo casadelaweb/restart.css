@@ -1,20 +1,19 @@
 ol {
   counter-reset: ol-list-counter;
 
-  li {
-    //position: relative;
-    //z-index: 0;
-    //padding-left: 20px;
+  & > li {
+    position: relative;
+    z-index: 0;
+    padding-left: 20px;
 
     &::before {
       content: counter(ol-list-counter) ".";
       counter-increment: ol-list-counter;
-      margin-right: 2px;
-      //position: absolute;
-      //z-index: 0;
-      //top: 0;
-      //left: 0;
-      //height: 100%;
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      height: 100%;
     }
   }
 }

@@ -14,7 +14,7 @@
   "scripts": {
     "open": "start ./index.html",
     "clean-up": "rm -rf dist/dummy.js",
-    "watch": "npm run open && webpack watch --node-env=development",
+    "watch": "npm run dev && npm run open && webpack watch --node-env=development",
     "dev": "webpack --node-env=development",
     "build": "webpack --node-env=production && npm run clean-up"
   },

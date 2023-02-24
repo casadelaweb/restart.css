@@ -4,10 +4,10 @@ ol {
 }
 
 li {
-  // Принудительно включить аппаратное ускорение на случай низкого заряда батареи
-
+  
   &::before,
   &::after {
+    // Принудительно включить аппаратное ускорение на случай низкого заряда батареи
     transform: translate3d(0, 0, 0);
     transition: none;
   }
@@ -24,7 +24,10 @@ summary {
   }
 }
 
-details,
-summary {
+details {
   display: block;
+}
+
+summary {
+  display: list-item;
 }
