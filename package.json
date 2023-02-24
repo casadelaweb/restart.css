@@ -1,9 +1,12 @@
 {
   "name": "restyle.css",
   "description": "Yet another default styles reset library.",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "./dist/index.js",
-  "style": "./dist/restyle.css",
+  "restyle.css/bundle": "./dist/bundle.js",
+  "restyle.css/margins": "./dist/margins.js",
+  "restyle.css/scrollbar": "./dist/scrollbar.js",
+  "restyle.css/checkboxes": "./dist/checkboxes.js",
   "license": "ISC",
   "homepage": "https://github.com/casadelaweb/restyle.css#readme",
   "repository": {
@@ -12,11 +15,13 @@
   },
   "author": "https://github.com/casadelaweb/",
   "scripts": {
+    "lint": "eslint ./src --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "open": "start ./index.html",
-    "clean-up": "rm -rf dist/dummy.js",
-    "watch": "npm run dev && npm run open && webpack watch --node-env=development",
-    "dev": "webpack --node-env=development",
-    "build": "webpack --node-env=production && npm run clean-up"
+    "watch": "npm run webpack watch --node-env=development --progress",
+    "watch-open": "npm run dev && npm run open && npm run watch",
+    "dev": "webpack --node-env=development --progress",
+    "prepare": "node prepare-build.mjs",
+    "build": "webpack --node-env=production --progress && npm run prepare"
   },
   "devDependencies": {
     "css-loader": "^6.7.1",

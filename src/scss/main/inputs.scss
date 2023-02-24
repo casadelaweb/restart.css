@@ -1,15 +1,21 @@
-input {
-  display: inline-block;
-}
-
 ::placeholder {
+  color: darkgrey;
   transition: opacity 0.5s;
   opacity: 1;
-  color: darkgrey;
 }
 
 :focus::placeholder {
   opacity: 0;
+}
+
+:-webkit-autofill {
+  &, &:hover, &:focus, &:active {
+    transition: background-color 999999s 0s, color 999999s 0s;
+  }
+}
+
+input {
+  display: inline-block;
 }
 
 [type='text'] {

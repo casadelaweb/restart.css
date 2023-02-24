@@ -1,19 +1,17 @@
 html {
   @media screen and (any-hover: hover) {
-    $width: 10px;
 
     &::-webkit-scrollbar {
-      width: $width;
+      width: 10px;
     }
 
-    //::-webkit-scrollbar-track {
-    //  background: black;
-    //}
+    &::-webkit-scrollbar-track {
+      background: white;
+    }
 
     &::-webkit-scrollbar-thumb {
       background: black;
-      // border: $width * 0.25 solid white;
-      // border-radius: $width;
+      border: 3px solid white;
     }
   }
 }
