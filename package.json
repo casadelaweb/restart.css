@@ -1,7 +1,7 @@
 {
   "name": "restyle.css",
   "description": "Yet another default styles reset library.",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "./dist/index.js",
   "restyle.css/bundle": "./dist/bundle.js",
   "restyle.css/margins": "./dist/margins.js",
@@ -20,7 +20,7 @@
     "watch": "npm run webpack watch --node-env=development --progress",
     "watch-open": "npm run dev && npm run open && npm run watch",
     "dev": "webpack --node-env=development --progress",
-    "prepare": "node prepare-build.mjs",
+    "prepare": "node prepare.mjs",
     "build": "webpack --node-env=production --progress && npm run prepare"
   },
   "devDependencies": {

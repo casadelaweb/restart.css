@@ -1,8 +1,11 @@
 a {
   display: inline;
-  color: currentColor;
   text-decoration: none;
   transition: color 0.5s;
+}
+
+a, button {
+  color: currentColor;
 }
 
 button {
